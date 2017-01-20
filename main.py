@@ -43,10 +43,10 @@ def do_something(sc):
         img.save('./screen/' + hostname+ dt + ".png", "PNG")
 
         #Повторять скрипт указанное время
-        s.enter(10, 1, do_something, (sc,))
+        s.enter(300, 1, do_something, (sc,))
 
 #ПоПовторять скрипт указанное время
-s.enter(10, 1, do_something, (s,))
+s.enter(300, 1, do_something, (s,))
 
 #Запуск задачи
 s.run()
